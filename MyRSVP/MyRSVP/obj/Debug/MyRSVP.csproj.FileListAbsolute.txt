@@ -1,0 +1,6 @@
+D:\My Project\rsvp\MyRSVP\MyRSVP\bin\MyRSVP.dll.config
+D:\My Project\rsvp\MyRSVP\MyRSVP\bin\MyRSVP.dll
+D:\My Project\rsvp\MyRSVP\MyRSVP\bin\MyRSVP.pdb
+D:\My Project\rsvp\MyRSVP\MyRSVP\obj\Debug\MyRSVP.csprojResolveAssemblyReference.cache
+D:\My Project\rsvp\MyRSVP\MyRSVP\obj\Debug\MyRSVP.dll
+D:\My Project\rsvp\MyRSVP\MyRSVP\obj\Debug\MyRSVP.pdb

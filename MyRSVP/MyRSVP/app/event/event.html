@@ -1,0 +1,47 @@
+﻿<section class="mainbar" data-ng-controller="event as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   <!--<span class="fa fa-search"></span>--> <input class="form-control" ng-model="filterValue"/></h5>
+                </div>
+            </div>
+            <div class="row">                
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th ng-click="vm.setSort('id')"><span ng-class="vm.getSortState('id')"></span>&nbsp;#</th>
+                                <th ng-click="vm.setSort('desc')"><span ng-class="vm.getSortState('desc')"></span>&nbsp;Event Description</thng-click>
+                                <th ng-click="vm.setSort('date')"><span ng-class="vm.getSortState('date')"></span>&nbsp;Date</th>
+                                <th ng-click="vm.setSort('venue')"><span ng-class="vm.getSortState('venue')"></span>&nbsp;Venue</th>
+                                <th ng-click="vm.setSort('creator')"><span ng-class="vm.getSortState('creator')"></span>&nbsp;By</th>
+                                <th>View Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="event in vm.eventList | orderBy:vm.column:vm.isReverse">
+                                <td>{{event.id}}</td>
+                                <td>{{event.desc}}</td>
+                                <td>{{event.date | date:"dd/MM/yyyy"}}</td>
+                                <td>{{event.venue}}</td>
+                                <td>{{event.creator}}</td>
+                                <td><button class="fa fa-list btn btn-default" ng-click="vm.viewDetail(event)"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+                <!--<div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <h3>TODO: Implement Your Features</h3>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+</section>
